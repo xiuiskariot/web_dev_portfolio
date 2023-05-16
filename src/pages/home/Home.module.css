@@ -1,0 +1,43 @@
+.home_container {
+  display: flex;
+  background: #011627;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.color_container {
+  width: 780px;
+  height: 750px;
+  position: relative;
+}
+
+.do {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  display: block;
+  width: 454px;
+  height: 492px;
+}
+
+.go {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 10;
+  display: block;
+  width: 454px;
+  height: 492px;
+}
+
+.snake {
+  position: absolute;
+  width: 475px;
+  height: 510px;
+  top: 137px;
+  left: 47px;
+  z-index: 15;
+}
+

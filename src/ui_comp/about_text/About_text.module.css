@@ -1,0 +1,22 @@
+.about_text_content {
+  font-family: "Fira Code";
+  width: 400px;
+  font-size: 18px;
+  
+}
+
+.about_text_area {
+  display: flex;
+  color: #607b96;
+}
+
+.about_numeric {
+  display: flex;
+  flex-direction: column;
+}
+
+li {
+  font-family: "Fira Code";
+  font-size: 18px;
+  list-style-type: none;
+}
