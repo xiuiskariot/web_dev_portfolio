@@ -4,7 +4,7 @@ export const Greeting = () => {
   return (
     <div className={s.greeting}>
       <h2 className={s.greeting_phrase}>Hi all. I am</h2>
-      <h1 className={s.greeting_name}>Micheal Weaver</h1>
+      <h1 className={s.greeting_name}>Ksusha Voronina</h1>
       <p className={s.greeting_prof}>&gt; Front-end developer</p>
       {/*eslint-disable-next-line */}
       <p className={s.greeting_comment}>// complete the game to continue</p>

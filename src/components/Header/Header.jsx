@@ -1,6 +1,10 @@
 
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import s from "./Header.module.css"
+
+const setActive = ({ isActive }) => ({
+  color: isActive ? "var(--color-active)" : "var(--color-not_active)",
+});
 
 export const Header = ({ children}) => {
   return (
@@ -9,10 +13,10 @@ export const Header = ({ children}) => {
         <ul className={s.container}>
           <li>micheal-weaver</li>
           <li>
-            <Link to="/">_hello</Link>
+            <NavLink to="/" style={setActive}>_hello</NavLink>
           </li>
           <li>
-            <Link to="about">_about</Link>
+            <NavLink to="about" style={setActive}>_about</NavLink>
           </li>
           <li>_projects</li>
           <li>_contact_me</li>

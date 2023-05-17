@@ -3,7 +3,7 @@ import s from "./AboutText.module.css";
 
 function numeric(number) {
   let arr = [];
-  for (let i = 1; i <= number / 14; i++) {
+  for (let i = 1; i <= number / 25; i++) {
     arr.push(i);
   }
   return arr;
@@ -15,7 +15,7 @@ export const AboutText = ({ text }) => {
   const textAreaRef = useRef(null);
 
   useEffect(() => {
-    setHeight(textAreaRef.current.scrollHeight);
+    setHeight(textAreaRef.current.offsetHeight);
   }, []);
 
   return (
