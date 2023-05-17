@@ -1,15 +1,35 @@
+import { Header } from "./components/Header/Header";
 import { About } from "./pages/about/About";
 import { Home } from "./pages/home/Home";
-
+//import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import {Routes, Route, Link} from "react-router-dom"
+import { Footer } from "./components/Footer/Footer";
 
 
 function App() {
-  return (
-    <div>
-      <About />
 
-      <script src="https://gist.github.com/xiuiskariot/300d3958bc4ccdd173c0053fd0ba387d.js"></script>
-    </div>
+
+  // const router = createBrowserRouter([
+  //   {
+  //     path: "/",
+  //     element: <Home/>
+
+  //   },
+  //   {
+  //     path: "about",
+  //     element: <About/>
+  //   }
+  // ])
+
+  return (
+    <>
+      <Header/>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="about" element={<About />} />
+      </Routes>
+      <Footer/>
+    </>
   );
 }
 

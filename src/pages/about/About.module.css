@@ -1,0 +1,5 @@
+.section_about {
+  display: flex;
+  background: #011627;
+  justify-content: space-between;
+}

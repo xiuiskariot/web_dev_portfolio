@@ -1,15 +1,15 @@
 import { useEffect, useRef, useState } from "react";
-import s from "./About_text.module.css";
+import s from "./AboutText.module.css";
 
 function numeric(number) {
   let arr = [];
-  for (let i = 1; i <= number / 24; i++) {
+  for (let i = 1; i <= number / 14; i++) {
     arr.push(i);
   }
   return arr;
 }
 
-export const About_text = ({ text }) => {
+export const AboutText = ({ text }) => {
   const [height, setHeight] = useState(0);
 
   const textAreaRef = useRef(null);

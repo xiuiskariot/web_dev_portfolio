@@ -1,0 +1,31 @@
+.container {
+  display: flex;
+  color: #607b96;
+  background-color: #011627;
+  height: 50px;
+
+}
+
+.logo {
+
+  height: 20px;
+  padding: 0 16px;
+}
+
+.container > li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #1E2D3D;
+  border-top: none;
+}
+
+
+.container > li:first-child{
+  padding: 0 18px;
+}
+
+.container > li:last-child{
+  margin-left: auto;
+  padding: 0 23px 0 15px;
+}

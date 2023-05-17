@@ -1,0 +1,26 @@
+.container {
+  display: flex;
+  color: #607b96;
+  background-color: #011627;
+  height: 55px;
+}
+
+.container li {
+  display: flex;
+
+  padding: 16px 32px;
+  border: 1px solid #1e2d3d;
+  border-bottom: none;
+}
+
+.container li:last-child {
+  margin-left: auto;
+}
+
+.container a {
+  text-decoration: none;
+}
+
+.container a:visited {
+  color: #607b96;
+}

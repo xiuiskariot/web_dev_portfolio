@@ -15,6 +15,7 @@ export const Home = () => {
         <img src={green} alt="b" className={s.do} />
         <img src={blue} alt="b" className={s.go} />
         <img src={snake} alt="s" className={s.snake} />
+
       </div>
     </div>
   );
