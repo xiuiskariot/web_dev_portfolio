@@ -1,5 +1,26 @@
 .section_about {
-  display: flex;
+
   background: #011627;
-  justify-content: space-between;
 }
+
+aside {
+  order: -1;
+  border: 1px solid #1e2d3d;
+  width: 243px;
+}
+
+.sub_category {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  padding: 0 0 8px 16px;
+  font-family: "Fira Code";
+}
+
+.sub_category:hover {
+  color: whitesmoke;
+  transition: all 100ms;
+  cursor: pointer;
+  
+}
+

@@ -1,0 +1,29 @@
+.accordion_heading {
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  font-family: "Fira Code";
+  font-style: normal;
+  font-weight: 400;
+  display: flex;
+  padding: 10px 0 14px 14px;
+}
+
+.accordion_heading_active {
+  transform: rotate(-90deg);
+  margin-right: 10px;
+}
+.accordion_content {
+  display: none;
+}
+.show {
+  display: block;
+  color: #607b96;
+}
+
+.accordion_heading_not_active {
+  margin-right: 10px;
+}
+
+

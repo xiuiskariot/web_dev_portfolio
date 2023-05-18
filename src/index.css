@@ -5,6 +5,12 @@
 }
 
 
+body {
+  padding: 69px;
+  background: #010C15;
+}
+
+
 
 @import url('https://cdn.rawgit.com/lonekorean/gist-syntax-themes/d49b91b3/stylesheets/one-dark.css');
 .gist-meta {
@@ -22,7 +28,7 @@ article > h2 {
   width: 100%;
 
   color: hotpink;
-  border-bottom: 2px solid orange;
+  border-bottom: 2px solid #FEA55F;
 
 }
 

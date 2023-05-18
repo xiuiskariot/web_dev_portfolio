@@ -1,18 +1,64 @@
+import { useState } from "react";
 import { AboutSnippets } from "../../ui_comp/about_snippets/AboutSnippets";
 import { AboutText } from "../../ui_comp/about_text/AboutText";
-import s from "./About.module.css"
-import { Link } from "react-router-dom";
+import { Aside } from "../../ui_comp/aside/Aside";
+import s from "./About.module.css";
+
+
+const bio = "Я только в начале пути изучения большого мира фронтэнда. До этого я несколько лет проектировала атомные станции. Занимаюсь пилоном. Недавно научилась делать колесо и вышивать бисером."
+const stack = "я пишу на js, быстро стилизую все на css, королева флексконтейнера научилась не плакать, когда пишу на реакте"
+const education = "как видите, я люблю учиться новому"
 
 
 export const About = () => {
-
-
+  const [aboutContent, setAboutContent] = useState(bio)
+  let cont1 = (
+    <ul>
+      <li className={s.sub_category} onClick={() => setAboutContent(bio)}>
+        bio
+      </li>
+      <li className={s.sub_category} onClick={() => setAboutContent(stack)}>
+        stack
+      </li>
+      <li className={s.sub_category} onClick={() => setAboutContent(education)}>
+        education
+      </li>
+    </ul>
+  );
+  let cont2 = (
+    <>
+      <p className={s.sub_category}>xiu666a@gmail.com </p>
+      <p className={s.sub_category}>номер телефона</p>
+    </>
+  );
 
   return (
     <section className={s.section_about}>
-      <AboutText text="        Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, nesciunt! Incidunt beatae est natus tempora blanditiis quaerat enim dolores delectus asperiores hic, atque iure, perferendis iusto deserunt quibusdam in corporis inventore sit doloremque eum? Id laboriosam quos error, nostrum, nobis culpa soluta quod tempore quasi repellendus minus. Id non quae delectus tenetur, sed aspernatur. Ratione praesentium facilis pariatur distinctio quae quibusdam provident, sunt magnam excepturi exercitationem, non facere deleniti rerum inventore officia? Quos, suscipit. Ullam vel aliquid iste quam facere adipisci eius corrupti quaerat numquam, facilis fuga excepturi. Quas quod maiores maxime ab fugiat at, voluptatem voluptatum! Sit, distinctio eveniet."></AboutText>
+      <AboutText text={aboutContent}></AboutText>
       <AboutSnippets />
-      <Link to="/">dsfdgfdfg</Link>
+      <aside>
+        {/* <Aside title="personal-info" content={cont1} />
+        <Aside title="contacts" content={cont2} /> */}
+        <Aside>
+          <ul>
+            <li className={s.sub_category} onClick={() => setAboutContent(bio)}>
+              bio
+            </li>
+            <li
+              className={s.sub_category}
+              onClick={() => setAboutContent(stack)}
+            >
+              stack
+            </li>
+            <li
+              className={s.sub_category}
+              onClick={() => setAboutContent(education)}
+            >
+              education
+            </li>
+          </ul>
+        </Aside>
+      </aside>
     </section>
   );
 };

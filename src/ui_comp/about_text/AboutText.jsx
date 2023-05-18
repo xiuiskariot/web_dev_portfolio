@@ -3,20 +3,24 @@ import s from "./AboutText.module.css";
 
 function numeric(number) {
   let arr = [];
-  for (let i = 1; i <= number / 25; i++) {
+  for (let i = 1; i <= number / 21; i++) {
     arr.push(i);
   }
   return arr;
 }
 
-export const AboutText = ({ text }) => {
-  const [height, setHeight] = useState(0);
+export function AboutText ({ text }) {
+  //const [height, setHeight] = useState(0);
 
   const textAreaRef = useRef(null);
+  const height = textAreaRef?.current?.clientHeight??0;
+  console.log(textAreaRef?.current?.textContent);
 
-  useEffect(() => {
-    setHeight(textAreaRef.current.offsetHeight);
-  }, []);
+
+  // useEffect(() => {
+  //   setHeight(textAreaRef.current.clientHeight);
+  //   console.log(textAreaRef)
+  // }, [text]);
 
   return (
     <div className={s.about_text_area}>
@@ -29,8 +33,9 @@ export const AboutText = ({ text }) => {
         {numeric(height).map(() => (
           <li> * &nbsp;</li>
         ))}
+
       </ul>
-      <p className={s.about_text_content} ref={textAreaRef}>
+      <p className={s.about_text_content} ref={textAreaRef} >
         {text}
       </p>
     </div>
