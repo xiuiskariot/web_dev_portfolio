@@ -8,6 +8,11 @@
 .about_text_area {
   display: flex;
   color: #607b96;
+  padding: 17px 38px;
+  border: 1px solid #1E2D3D;
+  border-left: none;
+
+ flex-basis: 40%;
 }
 
 .about_numeric {

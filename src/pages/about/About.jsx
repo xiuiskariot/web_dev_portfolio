@@ -1,45 +1,64 @@
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import { AboutSnippets } from "../../ui_comp/about_snippets/AboutSnippets";
-import { AboutText } from "../../ui_comp/about_text/AboutText";
+//import { AboutText } from "../../ui_comp/about_text/AboutText";
 import { Aside } from "../../ui_comp/aside/Aside";
 import s from "./About.module.css";
+import { NavigationBlock } from "../../ui_comp/navigaton_block/NavigationBlock";
 
+function numeric(number) {
+  let arr = [];
+  for (let i = 1; i <= number / 18; i++) {
+    arr.push(i);
+  }
+  console.log(arr);
+  return arr;
+}
 
-const bio = "Я только в начале пути изучения большого мира фронтэнда. До этого я несколько лет проектировала атомные станции. Занимаюсь пилоном. Недавно научилась делать колесо и вышивать бисером."
-const stack = "я пишу на js, быстро стилизую все на css, королева флексконтейнера научилась не плакать, когда пишу на реакте"
-const education = "как видите, я люблю учиться новому"
-
+const bio =
+  "1 Я только в начале пути изучения большого мира фронтэнда. До этого янесколько лет проектировала атомные станции. Занимаюсь пилоном. Недавнонаучилась делать колесо и вышивать бисером.             Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto animi perferendis reprehenderit consequuntur hic quia beatae! Adipisci saepe quaerat, perferendis, repudiandae harum esse mollitia ab culpa aliquid fugit facere provident? At nobis cupiditate, harum exercitationem alias quos dicta adipisci beatae dolorum officia corrupti vero sapiente, repudiandae, reprehenderit eius? Amet perspiciatis nisi eaque incidunt voluptatibus porro ducimus magnam sed quisquam pariatur ipsa natus, rem deserunt eligendi reiciendis necessitatibus beatae, nulla, similique fugit corrupti provident consequatur aspernatur? Aspernatur voluptate dolore iusto itaque exercitationem laboriosam nam eum? Quibusdam doloribus ipsum ab sed? Ipsum ratione blanditiis magnam autem placeat aut quaerat quas laborum libero. ";
+const stack =
+  "я пишу на js, быстро стилизую все на css, королева флексконтейнера научилась не плакать, когда пишу на реакте             Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto animi perferendis reprehenderit consequuntur hic quia beatae! Adipisci saepe quaerat, perferendis, repudiandae harum esse mollitia ab culpa aliquid fugit facere provident? At nobis cupiditate, harum exercitationem alias quos dicta adipisci beatae dolorum officia corrupti vero sapiente, repudiandae, reprehenderit eius? Amet perspiciatis nisi eaque incidunt voluptatibus porro ducimu.";
+const education = "как видите, я люблю учиться новому";
 
 export const About = () => {
-  const [aboutContent, setAboutContent] = useState(bio)
-  let cont1 = (
-    <ul>
-      <li className={s.sub_category} onClick={() => setAboutContent(bio)}>
-        bio
-      </li>
-      <li className={s.sub_category} onClick={() => setAboutContent(stack)}>
-        stack
-      </li>
-      <li className={s.sub_category} onClick={() => setAboutContent(education)}>
-        education
-      </li>
-    </ul>
-  );
-  let cont2 = (
-    <>
-      <p className={s.sub_category}>xiu666a@gmail.com </p>
-      <p className={s.sub_category}>номер телефона</p>
-    </>
-  );
+  const [aboutContent, setAboutContent] = useState(bio);
+
+  // const textAreaRef = useRef();
+  // const height = textAreaRef?.current?.clientHeight ?? 0;
+  // console.log(textAreaRef?.current?.textContent);
+
+  const [height, setHeight] = useState(0);
+  const textAreaRef = useRef(null);
+  const divRef = useRef(null);
+
+  // const height = 144;
+
+  useEffect(() => {
+    setHeight(0);
+
+    setHeight(textAreaRef.current.clientHeight);
+  }, [aboutContent]);
+
+  // useEffect(()=> {setHeight(0)}, [height])
 
   return (
     <section className={s.section_about}>
-      <AboutText text={aboutContent}></AboutText>
-      <AboutSnippets />
-      <aside>
-        {/* <Aside title="personal-info" content={cont1} />
-        <Aside title="contacts" content={cont2} /> */}
-        <Aside>
+      {/* <AboutText text={aboutContent} height={height} /> */}
+      <div className={s.about_text_area} ref={divRef}>
+        <ul className={s.about_numeric}>
+          {}
+          {numeric(height).map((el) => (
+            <li>{el}</li>
+          ))}
+        </ul>
+
+        <p className={s.about_text_content} ref={textAreaRef}>
+          {aboutContent}
+        </p>
+      </div>
+      {/* <AboutSnippets /> */}
+      <Aside>
+        <NavigationBlock title="professional-info">
           <ul>
             <li className={s.sub_category} onClick={() => setAboutContent(bio)}>
               bio
@@ -57,8 +76,14 @@ export const About = () => {
               education
             </li>
           </ul>
-        </Aside>
-      </aside>
+        </NavigationBlock>
+        <NavigationBlock title="contacts">
+          <>
+            <p className={s.sub_category}>xiu666a@gmail.com </p>
+            <p className={s.sub_category}>номер телефона</p>
+          </>
+        </NavigationBlock>
+      </Aside>
     </section>
   );
 };

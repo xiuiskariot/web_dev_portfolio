@@ -1,13 +1,14 @@
 .section_about {
+  /* display: flex;
+  grid-template-columns: 243px 1fr 1.5fr; */
+  justify-content: space-between;
+  min-height: 74vh;
+  width: 100%;
+
 
   background: #011627;
 }
 
-aside {
-  order: -1;
-  border: 1px solid #1e2d3d;
-  width: 243px;
-}
 
 .sub_category {
   font-weight: 400;
@@ -15,6 +16,7 @@ aside {
   line-height: 21px;
   padding: 0 0 8px 16px;
   font-family: "Fira Code";
+  list-style-type: none;
 }
 
 .sub_category:hover {
@@ -23,4 +25,31 @@ aside {
   cursor: pointer;
   
 }
+
+.about_text_area {
+  align-self: flex-start;
+  display: flex;
+ 
+
+  color: #607b96;
+  padding: 17px 38px;
+  border: 1px solid #1E2D3D;
+  border-left: none;
+  font-family: "Fira Code";
+
+ flex-basis: 70%;
+}
+
+.about_numeric {
+  list-style-type: none;
+   font-family: "Fira Code";
+}
+.about_text_content {
+  
+}
+
+
+/* "Я только в начале пути изучения большого мира фронтэнда \n. До этого я несколько лет проектировала атомные станции. Занимаюсь пилоном. Недавно научилась делать колесо и вышивать бисером." */
+
+
 

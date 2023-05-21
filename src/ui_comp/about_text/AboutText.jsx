@@ -9,35 +9,29 @@ function numeric(number) {
   return arr;
 }
 
-export function AboutText ({ text }) {
-  //const [height, setHeight] = useState(0);
+// export function AboutText({ text, height }) {
+//   // const [height, setHeight] = useState(144);
+//   // const textAreaRef = useRef(null)
 
-  const textAreaRef = useRef(null);
-  const height = textAreaRef?.current?.clientHeight??0;
-  console.log(textAreaRef?.current?.textContent);
+//   // // const height = 144;
 
+//   // useEffect(() => {
+//   //   setHeight(textAreaRef.current.clientHeight);
+//   // }, [text]);
 
-  // useEffect(() => {
-  //   setHeight(textAreaRef.current.clientHeight);
-  //   console.log(textAreaRef)
-  // }, [text]);
-
-  return (
-    <div className={s.about_text_area}>
-      <ul className={s.about_numeric}>
-        {numeric(height).map((el) => (
-          <li>{el} &nbsp; </li>
-        ))}
-      </ul>
-      <ul className={s.about_numeric}>
-        {numeric(height).map(() => (
-          <li> * &nbsp;</li>
-        ))}
-
-      </ul>
-      <p className={s.about_text_content} ref={textAreaRef} >
-        {text}
-      </p>
-    </div>
-  );
-};
+//   return (
+//     <div className={s.about_text_area}>
+//       <ul className={s.about_numeric}>
+//         {numeric(height).map((el) => (
+//           <li>{el}</li>
+//         ))}
+//       </ul>
+//       <ul className={s.about_numeric}>
+//         {numeric(height).map(() => (
+//           <li> * </li>
+//         ))}
+//       </ul>
+//       <p className={s.about_text_content} ref ={textAreaRef}>{text}</p>
+//     </div>
+//   );
+// }
