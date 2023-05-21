@@ -1,6 +1,6 @@
 .section_about {
-  /* display: flex;
-  grid-template-columns: 243px 1fr 1.5fr; */
+  display: flex;
+  grid-template-columns: 243px 1fr 1.5fr;
   justify-content: space-between;
   min-height: 74vh;
   width: 100%;
@@ -27,7 +27,7 @@
 }
 
 .about_text_area {
-  align-self: flex-start;
+
   display: flex;
  
 
@@ -45,7 +45,7 @@
    font-family: "Fira Code";
 }
 .about_text_content {
-  
+  align-self: flex-start;
 }
 
 
