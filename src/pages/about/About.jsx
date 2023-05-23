@@ -7,14 +7,14 @@ import { NavigationBlock } from "../../ui_comp/navigaton_block/NavigationBlock";
 
 function numeric(number) {
   let arr = [];
-  for (let i = 1; i <= number / 18; i++) {
+  for (let i = 1; i <= number / 20; i++) {
     arr.push(i);
   }
 
   return arr;
 }
 
-// let arr = [];
+
 
 const bio =
   "1 Я только в начале пути изучения большого мира фронтэнда. До этого янесколько лет проектировала атомные станции. Занимаюсь пилоном. Недавнонаучилась делать колесо и вышивать бисером.             Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto animi perferendis reprehenderit consequuntur hic quia beatae! Adipisci saepe quaerat, perferendis, repudiandae harum esse mollitia ab culpa aliquid fugit facere provident? At nobis cupiditate, harum exercitationem alias quos dicta adipisci beatae dolorum officia corrupti vero sapiente, repudiandae, reprehenderit eius? Amet perspiciatis nisi eaque incidunt voluptatibus porro ducimus magnam sed quisquam pariatur ipsa natus, rem deserunt eligendi reiciendis necessitatibus beatae, nulla, similique fugit corrupti provident consequatur aspernatur? Aspernatur voluptate dolore iusto itaque exercitationem laboriosam nam eum? Quibusdam doloribus ipsum ab sed? Ipsum ratione blanditiis magnam autem placeat aut quaerat quas laborum libero. ";
@@ -26,39 +26,21 @@ export const About = () => {
   const [aboutContent, setAboutContent] = useState(bio);
   const [arrNumbers, setArrNumbers] = useState([])
 
-  // const textAreaRef = useRef();
-  // const height = textAreaRef?.current?.clientHeight ?? 0;
-  // console.log(textAreaRef?.current?.textContent);
-
-  const [height, setHeight] = useState(0);
   const textAreaRef = useRef(null);
-  const divRef = useRef(null);
 
-  // const height = 144;
 
   useEffect(() => {
-    
-    // setHeight(textAreaRef.current.clientHeight);
-
     setArrNumbers(numeric(textAreaRef.current.clientHeight));
-    console.log(textAreaRef.current.clientHeight);
-    
-
   }, [aboutContent]);
 
-  // useEffect(()=> {setHeight(0)}, [height])
-  //  arr.length = 0;
-  //     for (let i = 1; i <= height / 18; i++) {
-  //       arr.push(i);
-  //   }
-  //   console.log(arr)
+
   return (
     <section className={s.section_about}>
       {/* <AboutText text={aboutContent} height={height} /> */}
-      <div className={s.about_text_area} >
-        <ul className={s.about_numeric} >
+      <div className={s.about_text_area}>
+        <ul className={s.about_numeric}>
           {arrNumbers.map((el) => (
-            <li>{el}</li>
+            <li>{el}&nbsp; </li>
           ))}
         </ul>
 

@@ -9,9 +9,10 @@ function numeric(number) {
   return arr;
 }
 
-export function AboutText({ text, height }) {
+export function AboutText({ aboutContent }) {
   // const [height, setHeight] = useState(144);
-  // const textAreaRef = useRef(null)
+  const textAreaRef = useRef(null);
+    const [arrNumbers, setArrNumbers] = useState([]);
 
   // // const height = 144;
 
@@ -19,19 +20,24 @@ export function AboutText({ text, height }) {
   //   setHeight(textAreaRef.current.clientHeight);
   // }, [text]);
 
+  useEffect(() => {
+    // setHeight(textAreaRef.current.clientHeight);
+
+    setArrNumbers(numeric(textAreaRef.current.clientHeight));
+
+  }, [aboutContent]);
+
   return (
     <div className={s.about_text_area}>
       <ul className={s.about_numeric}>
-        {numeric(height).map((el) => (
-          <li>{el}</li>
+        {arrNumbers.map((el) => (
+          <li>{el}&nbsp; </li>
         ))}
       </ul>
-      <ul className={s.about_numeric}>
-        {numeric(height).map(() => (
-          <li> * </li>
-        ))}
-      </ul>
-      <p className={s.about_text_content} ref ={textAreaRef}>{text}</p>
+
+      <p className={s.about_text_content} ref={textAreaRef}>
+        {aboutContent}
+      </p>
     </div>
   );
 }

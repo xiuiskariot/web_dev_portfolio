@@ -19,7 +19,9 @@ export const Header = ({ children}) => {
             <NavLink to="about" style={setActive}>_about</NavLink>
           </li>
           <li>_projects</li>
-          <li>_contact_me</li>
+          <li>
+            <NavLink to ="contact_me" style={setActive}> _contact_me</NavLink>
+           </li>
         </ul>
       </header>
     </>
