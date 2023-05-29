@@ -8,9 +8,10 @@
   border: 1px solid #1e2d3d;
   border-left: none;
   border-top:none;
-  height: 100%;
-position: relative;
-  overflow-y: auto;
+  max-height: calc(100vh - 55px - 50px - 140px - 44px);
+
+
+  overflow-y: scroll;
   box-sizing: content-box;
   
 }

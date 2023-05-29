@@ -2,10 +2,8 @@
   display: flex;
   grid-template-columns: 243px 1fr 1.5fr;
   justify-content: space-between;
-  min-height: 74vh;
+  height: 74vh;
   width: 100%;
-
-
   background: #011627;
 }
 
