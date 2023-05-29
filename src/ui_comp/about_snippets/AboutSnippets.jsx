@@ -10,6 +10,7 @@ export const AboutSnippets = () => {
   const [details2, setDetails2] = useState("");
 
   return (
+    
     <div className={s.container} >
       {/* eslint-disable-next-line */}
       <p className={s.about_snippet_title}>// Code snippet showcase:</p>

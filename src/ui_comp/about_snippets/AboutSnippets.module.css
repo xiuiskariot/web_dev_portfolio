@@ -1,14 +1,14 @@
-/* .scroll_cont {
+.scroll_cont {
   position: relative;
   max-height: calc(100vh - 55px - 50px - 140px - 44px);
-} */
+}
 
 .container {
   flex-basis: 50%;
   border: 1px solid #1e2d3d;
   border-left: none;
   border-top:none;
-  max-height: calc(100vh - 55px - 50px - 140px - 44px);
+  max-height: calc(100vh - 55px - 50px - 140px);
 
 
   overflow-y: scroll;
