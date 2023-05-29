@@ -36,6 +36,8 @@
   font-family: "Fira Code";
 
  flex-basis: 40%;
+ overflow: auto;
+height: auto;
 }
 
 .about_numeric {
