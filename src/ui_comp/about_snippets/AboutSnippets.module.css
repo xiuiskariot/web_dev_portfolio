@@ -1,8 +1,18 @@
+/* .scroll_cont {
+  position: relative;
+  max-height: calc(100vh - 55px - 50px - 140px - 44px);
+} */
+
 .container {
   flex-basis: 50%;
   border: 1px solid #1e2d3d;
   border-left: none;
   border-top:none;
+  height: 100%;
+position: relative;
+  overflow-y: auto;
+  box-sizing: content-box;
+  
 }
 .about_snippets {
   padding-top: 44px;

@@ -3,7 +3,7 @@ import blue from "./Blue.svg";
 import snake from "./Snake_Game.svg";
 import s from "./Home.module.css";
 
-import { Greeting } from "../../components/greeting/Greeting";
+import { Greeting } from "../../components/Greeting/Greeting";
 
 
 export const Home = () => {

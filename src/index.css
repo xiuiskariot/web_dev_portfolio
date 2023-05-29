@@ -2,12 +2,33 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  
 }
-
+/* #root {
+    display: flex;
+  height: calc(100vh - 55px - 50px - 140px);
+  width: calc(100vh - 140px);
+  justify-content: center;
+  align-items: center;
+  
+} */
 body {
-  padding: 69px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* padding: 69px; */
   background: #010c15;
   font-family: 'Fira Code';
+  min-height: 100vh;
+
+
+
+}
+
+main {
+  border:  1px solid #1e2d3d;
+  height: calc(100vh - 55px - 50px - 140px);
+  width: calc(100vw - 140px);
 }
 
 /* @import url("https://cdn.rawgit.com/lonekorean/gist-syntax-themes/d49b91b3/stylesheets/one-dark.css"); */

@@ -1,16 +1,29 @@
 import { dataProjects } from "../../pages/projects/data/data";
 import s from "./ProjectCard.module.css";
-import { Swiper, SwiperSlide } from "swiper/react";
+import { Swiper, SwiperSlide, Parallax } from "swiper/react";
+import "swiper/css";
+import { Navigation, Pagination, Scrollbar, EffectCreative } from "swiper";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "swiper/css/scrollbar";
+import "swiper/css/parallax";
+import "swiper/css/effect-creative";
 
 import React from "react";
 
 export const ProjectCard = () => {
   return (
     <Swiper
-      spaceBetween={50}
-      slidesPerView={3}
-      onSlideChange={() => console.log("slide change")}
-      onSwiper={(swiper) => console.log(swiper)}
+      direction={"verical"}
+      // modules={[Navigation, Pagination, Scrollbar, EffectCreative]}
+
+      // onSlideChange={() => console.log("slide change")}
+      // onSwiper={(swiper) => console.log(swiper)}
+      // scrollbar={{ draggable: true }}
+      pagination={{
+        clickable: true,
+      }}
+      modules={[Pagination]}
     >
       {dataProjects.map((el) => (
         <SwiperSlide>

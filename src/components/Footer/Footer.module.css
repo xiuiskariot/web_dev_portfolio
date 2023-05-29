@@ -3,11 +3,11 @@
   color: #607b96;
   background-color: #011627;
   height: 50px;
+  border-bottom: 1px solid #1E2D3D;
 
 }
 
 .logo {
-
   height: 20px;
   padding: 0 16px;
 }
@@ -18,11 +18,17 @@
   align-items: center;
   border: 1px solid #1E2D3D;
   border-top: none;
+  border-bottom: none;
 }
 
 
 .container > li:first-child{
   padding: 0 18px;
+  border-right: none;
+}
+
+.container > li:nth-child(3) {
+  border-left: none;
 }
 
 .container > li:last-child{

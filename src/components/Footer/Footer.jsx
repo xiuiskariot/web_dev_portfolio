@@ -1,6 +1,6 @@
-import habr_logo from "./8d55bfcb5fbb62d38d81a221ac140198.png"
-import vk_logo from "./VK_Logo1.png"
-import gh_logo from "./Vector.png"
+import habr_logo from "./assets/habr_logo.png"
+import vk_logo from "./assets/vk_logo.png"
+import gh_logo from "./assets/gh_logo.png"
 import s from "./Footer.module.css"
 
 export const Footer = () => {
@@ -16,7 +16,7 @@ export const Footer = () => {
         </li>
         <li>
           @xiuiskariot &nbsp;
-          <img src={gh_logo} alt="" />
+          <img src={gh_logo} alt="git" />
         </li>
       </ul>
     </footer>
