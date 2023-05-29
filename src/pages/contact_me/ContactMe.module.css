@@ -1,20 +1,18 @@
 .contact_container {
   display: flex;
   min-height: 70vh;
-  /* align-items: center;
-  justify-content: center; */
+  background: #011627;
 }
 
 .contact_form {
   padding-top: 100px;
   display: flex;
   flex-direction: column;
-
   color: #607b96;
-  flex-basis: 50%;
-  
+  flex-basis: 40%;
   align-items: center;
-  border: 1px solid #1E2D3D;
+  border: 1px solid #1e2d3d;
+  border-left: none;
 }
 
 .contact_form > div {
@@ -23,20 +21,20 @@
 }
 
 .contact_log {
-  padding: 100px 50px 0;
+  padding: 100px 40px 0 ;
   color: #5565e8;
   flex-basis: 50%;
 
-  align-self: flex-start;
-  border: 1px solid #1E2D3D;
- 
+  /* align-self: flex-start; */
+  border: 1px solid #1e2d3d;
+  border-left: none;
+
   justify-content: center;
   align-items: center;
 }
 
-input {
-  width: 372px;
-  height: 41px;
+input,
+textarea {
   padding: 10px 15px;
   color: #465e77;
   font-family: "Fira Code";
@@ -47,6 +45,17 @@ input {
   border-radius: 8px;
   outline: none;
   margin-bottom: 24px;
+}
+
+input {
+  width: 372px;
+  height: 41px;
+}
+
+textarea {
+  width: 372px;
+  min-height: 145px;
+  resize: vertical;
 }
 
 .contact_form input:not(:last-child) {
@@ -82,3 +91,18 @@ label {
 .orange {
   color: #fea55f;
 }
+
+ol {
+  counter-reset: myCounter;
+}
+
+ol > li {
+  list-style: none;
+}
+
+ol > li:before {
+  counter-increment: myCounter;
+  content: counter(myCounter);
+  margin-right: 30px;
+  color: #607b96;
+} 

@@ -1,0 +1,30 @@
+.container {
+  width: 700px;
+  display: flex;
+  border-radius: 16px;
+  margin: 100px;
+  background: hotpink;
+}
+
+.pic > img {
+  width: 450px;
+  height: 100%;
+  border-radius:0 16px 16px 0 ;
+}
+
+.info {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  
+}
+
+.info > p {
+  padding-left: 15px;
+}
+
+.links {
+  display: flex;
+  justify-content: space-around;
+}

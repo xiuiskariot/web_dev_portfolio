@@ -13,15 +13,30 @@ export const Header = ({ children}) => {
         <ul className={s.container}>
           <li>micheal-weaver</li>
           <li>
-            <NavLink to="/" style={setActive}>_hello</NavLink>
+            <NavLink to="/" style={setActive}>
+              _hello
+            </NavLink>
           </li>
           <li>
-            <NavLink to="about" style={setActive}>_about</NavLink>
+            <NavLink to="about" style={setActive}>
+              _about
+            </NavLink>
           </li>
-          <li>_projects</li>
           <li>
-            <NavLink to ="contact_me" style={setActive}> _contact_me</NavLink>
-           </li>
+            <NavLink to="projects" style={setActive}>
+              _projects
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="snake" style={setActive}>
+              _snake
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="contact_me" style={setActive}>
+              _contact_me
+            </NavLink>
+          </li>
         </ul>
       </header>
     </>
