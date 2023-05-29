@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/web_dev_portfolio/static/css/main.f5017e62.css",
+    "main.js": "/web_dev_portfolio/static/js/main.2d2f3d9b.js",
+    "static/media/web_konstruct.png": "/web_dev_portfolio/static/media/web_konstruct.46c80211704dfd06bdd8.png",
+    "static/media/web_novik.png": "/web_dev_portfolio/static/media/web_novik.d27ebb5bb7dd6b801f09.png",
+    "static/media/web_harry2.png": "/web_dev_portfolio/static/media/web_harry2.e9dc28e87a17e61a803f.png",
+    "static/media/my_photo.jpg": "/web_dev_portfolio/static/media/my_photo.15f30bbd51d4e6e1caa1.jpg",
+    "static/media/web_weather.png": "/web_dev_portfolio/static/media/web_weather.ac57a751294b73b0f6c2.png",
+    "static/media/habr_logo.png": "/web_dev_portfolio/static/media/habr_logo.48eeedd0c2152fca9b7d.png",
+    "static/media/web_emoji.png": "/web_dev_portfolio/static/media/web_emoji.673940addeb274a13984.png",
+    "static/media/Snake_Game.svg": "/web_dev_portfolio/static/media/Snake_Game.74b0df39f4761ac849dff4d0fdabd6b4.svg",
+    "static/media/vk_logo.png": "/web_dev_portfolio/static/media/vk_logo.ce116e6eca5f45c868e3.png",
+    "static/media/Blue.svg": "/web_dev_portfolio/static/media/Blue.a1ea64728fd81940a400ac0b9c52da69.svg",
+    "static/media/Green.svg": "/web_dev_portfolio/static/media/Green.0901bfb259e5824b0b97fdec6a6c74a1.svg",
+    "static/media/details.svg": "/web_dev_portfolio/static/media/details.ca254dbd23c8ec8cf8c3c1af1e58ae0a.svg",
+    "index.html": "/web_dev_portfolio/index.html",
+    "static/media/trainglr.svg": "/web_dev_portfolio/static/media/trainglr.96b37c0f64b4c30ba72fb03b2431007f.svg",
+    "main.f5017e62.css.map": "/web_dev_portfolio/static/css/main.f5017e62.css.map",
+    "main.2d2f3d9b.js.map": "/web_dev_portfolio/static/js/main.2d2f3d9b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f5017e62.css",
+    "static/js/main.2d2f3d9b.js"
+  ]
+}
