@@ -1,6 +1,6 @@
 .contact_container {
   display: flex;
-  min-height: 70vh;
+  height: 100%;
   background: #011627;
 }
 
