@@ -36,7 +36,7 @@ export const About = () => {
 
   return (
     <section className={s.section_about}>
-      {/* <AboutText text={aboutContent} height={height} /> */}
+
       <div className={s.about_text_area}>
         <ul className={s.about_numeric}>
           {arrNumbers.map((el) => (

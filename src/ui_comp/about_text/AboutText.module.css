@@ -10,12 +10,13 @@
   font-family: "Fira Code";
   flex-basis: 40%;
   height: 100%;
+  
 }
 
 .about_numeric {
   list-style-type: none;
   font-family: "Fira Code";
 }
-.about_text_content {
+/* .about_text_content {
   align-self: flex-start;
-}
+} */

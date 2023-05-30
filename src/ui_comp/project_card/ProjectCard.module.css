@@ -16,6 +16,7 @@ section {
   background: grey;
   border: 1px solid black;
   opacity: 50%;
+  transition: 0.3s;
 }
 
 .activeSlide {
@@ -26,6 +27,7 @@ section {
 margin: 20px 0;
   background: grey;
   transform: scale(1.2);
+  transition: 0.3s;
 }
 
 .pic > img {

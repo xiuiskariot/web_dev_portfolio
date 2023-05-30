@@ -29,17 +29,18 @@
   border: 1px solid #1e2d3d;
   border-left: none;
   font-family: "Fira Code";
+  height: 100%;
 
   flex-basis: 40%;
   overflow: auto;
-  height: auto;
+
 }
 
 .about_numeric {
   list-style-type: none;
   font-family: "Fira Code";
 }
-.about_text_content {
+/* .about_text_content {
   align-self: flex-start;
-}
+} */
 

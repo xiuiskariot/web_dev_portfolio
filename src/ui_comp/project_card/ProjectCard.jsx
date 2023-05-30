@@ -1,12 +1,8 @@
 import { useState, useEffect } from "react";
 import { dataProjects } from "../../pages/projects/data/data";
 import s from "./ProjectCard.module.css";
-// import Slider from "react-slick";
-// import "slick-carousel/slick/slick.css";
-// import "slick-carousel/slick/slick-theme.css";
 
-import React from "react";
-// import { useEffect } from "react";
+
 
 export const ProjectCard = () => {
   const [arrCards, setArrCards] = useState([]);
@@ -14,21 +10,21 @@ export const ProjectCard = () => {
   const arrOfId = [1, 2, 3, 4, 5];
   let newArr = [...arrOfId];
   useEffect(() => {
-    setArrCards(newArr);
-  }, [currentSlide]); // eslint-disable-line react-hooks/exhaustive-deps
+    // setArrCards(newArr);
+      if (currentSlide === 1) {
+        setArrCards([5, currentSlide, 2]);
+      } else if (currentSlide >= 2 && currentSlide <= 4) {
+        const sliced1 = arrOfId.slice(currentSlide - 2, currentSlide);
+        const sliced2 = arrOfId.slice(currentSlide, currentSlide + 1);
+        setArrCards([...sliced1, ...sliced2]);
+      } else if (currentSlide === 5) {
+        setArrCards([4, 5, 1]);
+      }
 
-  if (currentSlide === 1) {
-    newArr = [5, currentSlide, 2];
-  } else if (currentSlide >= 2 && currentSlide <= 4) {
-    const sliced1 = arrOfId.slice(currentSlide - 2, currentSlide);
-    const sliced2 = arrOfId.slice(currentSlide, currentSlide + 1);
-    newArr = [...sliced1, ...sliced2];
-  } else if (currentSlide === 5) {
-    newArr = [4, 5, 1];
-  }
+  }, [currentSlide ]); // eslint-disable-line react-hooks/exhaustive-deps
 
   function getFiltredArr() {
-    return dataProjects.filter((item) => newArr.includes(item.id));
+    return dataProjects.filter((item) => arrCards.includes(item.id));
   }
 
   return (
