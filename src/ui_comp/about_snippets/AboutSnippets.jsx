@@ -2,16 +2,15 @@ import ReactEmbedGist from "react-embed-gist";
 import s from "./AboutSnippets.module.css";
 import my_photo from "./my_photo.jpg";
 import details_i from "./details.svg";
-import { useRef, useState, useEffect } from "react";
-import debounce from "lodash.debounce";
+import { useState} from "react";
+
 
 export const AboutSnippets = () => {
   const [details1, setDetails1] = useState("");
   const [details2, setDetails2] = useState("");
 
   return (
-    
-    <div className={s.container} >
+    <div className={s.container}>
       {/* eslint-disable-next-line */}
       <p className={s.about_snippet_title}>// Code snippet showcase:</p>
       <div className={s.about_snippets}>

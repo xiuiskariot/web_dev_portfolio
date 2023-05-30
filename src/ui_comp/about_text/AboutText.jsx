@@ -10,21 +10,11 @@ function numeric(number) {
 }
 
 export function AboutText({ aboutContent }) {
-  // const [height, setHeight] = useState(144);
   const textAreaRef = useRef(null);
-    const [arrNumbers, setArrNumbers] = useState([]);
-
-  // // const height = 144;
-
-  // useEffect(() => {
-  //   setHeight(textAreaRef.current.clientHeight);
-  // }, [text]);
+  const [arrNumbers, setArrNumbers] = useState([]);
 
   useEffect(() => {
-    // setHeight(textAreaRef.current.clientHeight);
-
     setArrNumbers(numeric(textAreaRef.current.clientHeight));
-
   }, [aboutContent]);
 
   return (

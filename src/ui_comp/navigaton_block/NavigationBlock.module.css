@@ -1,3 +1,7 @@
+nav {
+  align-self: flex-start;
+}
+
 .accordion_heading {
   color: #ffffff;
   font-weight: 400;

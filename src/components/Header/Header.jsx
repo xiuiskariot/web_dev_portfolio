@@ -27,11 +27,7 @@ export const Header = ({ children}) => {
               _projects
             </NavLink>
           </li>
-          <li>
-            <NavLink to="snake" style={setActive}>
-              _snake
-            </NavLink>
-          </li>
+
           <li>
             <NavLink to="contact_me" style={setActive}>
               _contact_me

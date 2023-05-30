@@ -4,18 +4,11 @@
   box-sizing: border-box;
   
 }
-/* #root {
-    display: flex;
-  height: calc(100vh - 55px - 50px - 140px);
-  width: calc(100vh - 140px);
-  justify-content: center;
-  align-items: center;
-  
-} */
+
 body {
-  display: flex;
+  /* display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
   background: #010c15;
   font-family: 'Fira Code';
   min-height: 100vh;
