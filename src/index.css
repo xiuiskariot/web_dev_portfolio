@@ -9,7 +9,7 @@ body {
   /* display: flex;
   justify-content: center;
   align-items: center; */
-  background: #010c15;
+  background: #f8c1e3;
   font-family: 'Fira Code';
   min-height: 100vh;
 }
@@ -36,8 +36,9 @@ article > h2 {
   height: 100%;
   padding: 16px 32px;
   width: 100%;
-  color: #ffffff;
-  border-bottom: 2px solid #fea55f;
+  /* color: #ffffff; */
+  border-bottom: 3px solid indigo;
+  
 }
 
 .not_active {

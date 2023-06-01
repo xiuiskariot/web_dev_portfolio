@@ -2,6 +2,7 @@
   font-family: "Fira Code";
   font-style: normal;
   max-width: 521px;
+  padding-left: 40px;
  
   
 }
@@ -10,14 +11,14 @@
   font-weight: 450;
   font-size: 18px;
   line-height: 24px;
-  color: #e5e9f0;
+  color: #3a097a;
 }
 
 .greeting_name {
   font-weight: 400;
   font-size: 62px;
   line-height: 81px;
-  color: #e5e9f0;
+  color: #23024e;
 }
 
 .greeting_prof {
@@ -48,13 +49,13 @@
 }
 
 .green {
-  color: #43D9AD;
+  color: LightSeaGreen;
 }
 
 .orange {
-  color: #E99287;
+  color: mediumorchid;
 }
 
 .white {
-  color: #FFFFFF;
+  color:#607b96;
 }

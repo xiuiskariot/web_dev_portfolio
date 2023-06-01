@@ -1,7 +1,8 @@
 .aside {
   order: -1;
-  border: 1px solid #1e2d3d;
-  width: 243px;
+  border-right: 1px solid #1e2d3d;
+  
+  width: 227px;
   align-self: flex-start;
   height: 100%;
 }

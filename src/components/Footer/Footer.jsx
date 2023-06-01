@@ -1,24 +1,24 @@
-import habr_logo from "./assets/habr_logo.png"
-import vk_logo from "./assets/vk_logo.png"
-import gh_logo from "./assets/gh_logo.png"
-import s from "./Footer.module.css"
+import gh_logo from "./assets/github-mark.png";
+import tg_logo from "./assets/telegram-logo-965.png";
+import s from "./Footer.module.css";
 
 export const Footer = () => {
   return (
     <footer>
       <ul className={s.container}>
-        <li>find me in:</li>
         <li>
-          <img src={habr_logo} alt="habr" className={s.logo} />
+          <a href="https://t.me/uhoju">
+            _my_telegram
+            <img src={tg_logo} alt="tg" className={s.logo} />
+          </a>
         </li>
         <li>
-          <img src={vk_logo} alt="vk" className={s.logo} />
-        </li>
-        <li>
-          @xiuiskariot &nbsp;
-          <img src={gh_logo} alt="git" />
+          <a href="https://github.com/xiuiskariot">
+            @xiuiskariot
+            <img src={gh_logo} alt="git" className={s.logo} />
+          </a>
         </li>
       </ul>
     </footer>
   );
-}
+};
