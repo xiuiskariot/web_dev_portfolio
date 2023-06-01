@@ -29,11 +29,9 @@
   border: 1px solid #1e2d3d;
   border-left: none;
   font-family: "Fira Code";
-  height: 100%;
-
+  align-items: flex-start;
   flex-basis: 40%;
   overflow: auto;
-
 }
 
 .about_numeric {
@@ -43,4 +41,3 @@
 /* .about_text_content {
   align-self: flex-start;
 } */
-

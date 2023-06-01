@@ -37,9 +37,11 @@
 .snake {
   position: absolute;
   width: 475px;
-  height: 510px;
+ 
   top: 137px;
   left: 47px;
   z-index: 15;
+   border-radius: 60% 40% 40% 20%;
+  transition: box-shadow ease-in 150ms;
 }
 

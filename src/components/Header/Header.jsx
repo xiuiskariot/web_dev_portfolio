@@ -11,7 +11,7 @@ export const Header = ({ children}) => {
     <>
       <header>
         <ul className={s.container}>
-          <li>micheal-weaver</li>
+          <li>_ksusha_voronina</li>
           <li>
             <NavLink to="/" style={setActive}>
               _hello
