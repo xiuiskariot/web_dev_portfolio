@@ -1,0 +1,11 @@
+.project_cards {
+  transition: all 1s;
+  background: #011627;
+  width: 100%;
+
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

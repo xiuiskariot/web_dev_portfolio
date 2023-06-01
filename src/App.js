@@ -8,7 +8,7 @@ import { Layout } from "./components/Layout/Layout";
 import { ContactMe } from "./pages/contact_me/ContactMe";
 
 
-import { ProjectCard } from "./ui_comp/project_card/ProjectCard";
+import { Projects } from "./pages/projects/Projects/Projects";
 
 
 function App() {
@@ -19,7 +19,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="about" element={<About />} />
           <Route path="contact_me" element={<ContactMe />} />
-          <Route path="projects" element={ <ProjectCard/>} />
+          <Route path="projects" element={ <Projects/>} />
       
         </Routes>
       </Layout>
