@@ -1,10 +1,8 @@
 .home_container {
   display: flex;
-  /* background: #d8bfd8; */
   margin: 0 auto;
   justify-content: center;
   align-items: center;
-  /* border: 1px solid #1e2d3d; */
   height: 100%;
 }
 

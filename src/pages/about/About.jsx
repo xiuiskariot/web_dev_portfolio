@@ -36,7 +36,6 @@ export const About = () => {
 
   return (
     <section className={s.section_about}>
-
       <div className={s.about_text_area}>
         <ul className={s.about_numeric}>
           {arrNumbers.map((el) => (
@@ -77,7 +76,8 @@ export const About = () => {
         <NavigationBlock title="contacts">
           <>
             <p className={s.sub_category}>xiu666a@gmail.com </p>
-            <p className={s.sub_category}>номер телефона</p>
+            {/*eslint-disable-next-line */}
+            <p className={s.sub_category}>+7(993)215-78-92</p>
           </>
         </NavigationBlock>
       </Aside>

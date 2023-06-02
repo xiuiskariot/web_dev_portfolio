@@ -1,4 +1,4 @@
-import triangle from "./trainglr.svg";
+
 import s from "./NavigationBlock.module.css"
 import { useState } from "react";
 
@@ -13,15 +13,13 @@ export function NavigationBlock({title, children }) {
           active === title ? setActive("") : setActive(title);
         }}
       >
-        <img
-          src={triangle}
-          alt="close"
+        <span
           className={
             active === title
               ? s.accordion_heading_active
               : s.accordion_heading_not_active
           }
-        />
+        >▶</span>
         <p>{title}</p>
       </div>
 

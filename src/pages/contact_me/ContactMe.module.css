@@ -1,7 +1,11 @@
 .contact_container {
-  display: flex;
+  /* display: flex;
+   justify-content: space-between; */
   height: 100%;
-  background: #011627;
+ width: 100%;
+   display: grid;
+  grid-template-columns: 243px 1fr 1.5fr;
+  justify-content: space-between;
 }
 
 .contact_form {
@@ -23,7 +27,7 @@
 .contact_log {
   padding: 100px 40px 0 ;
   color: #5565e8;
-  flex-basis: 50%;
+  flex-basis: 40%;
 
   /* align-self: flex-start; */
   border: 1px solid #1e2d3d;
@@ -106,3 +110,19 @@ ol > li:before {
   margin-right: 30px;
   color: #607b96;
 } 
+
+.sub_category {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  padding: 0 0 8px 16px;
+  font-family: "Fira Code";
+  list-style-type: none;
+  color: #23024e;
+}
+
+.sub_category:hover {
+  color:rgb(22, 118, 113);
+  transition: all 100ms;
+  cursor: pointer;
+}

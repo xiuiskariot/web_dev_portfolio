@@ -66,7 +66,15 @@ export const ContactMe = () => {
             onChange={(evt) => setInputMessage(evt.target.value)}
             name="msg"
           />
-          <button className={s.contact_btn} type="submit" onClick={()=>{formStatus? setFormStatus(false) : setFormStatus(true)}}>sumbit-message</button>
+          <button
+            className={s.contact_btn}
+            type="submit"
+            onClick={() => {
+              formStatus ? setFormStatus(false) : setFormStatus(true);
+            }}
+          >
+            sumbit-message
+          </button>
         </div>
       </form>
       <div className={s.contact_log}>
@@ -125,7 +133,8 @@ export const ContactMe = () => {
         <NavigationBlock title="contacts">
           <>
             <p className={s.sub_category}>xiu666a@gmail.com </p>
-            <p className={s.sub_category}>номер телефона</p>
+            {/*eslint-disable-next-line */}
+            <p className={s.sub_category}>+7(993)215-78-92</p>
           </>
         </NavigationBlock>
       </Aside>
