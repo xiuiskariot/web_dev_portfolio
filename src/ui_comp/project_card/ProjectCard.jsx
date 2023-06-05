@@ -4,7 +4,7 @@ export const ProjectCard = ({ el, setCurrentSlide, currentSlide }) => {
   return (
     <div
       className={currentSlide === el.id ? s.activeSlide : s.container}
-      onClick={() => setTimeout(()=>{ setCurrentSlide(el.id)}, 150)}
+      onClick={() => setCurrentSlide(el.id)}
     >
       <div className={s.info}>
         <p>{el.discript}</p>

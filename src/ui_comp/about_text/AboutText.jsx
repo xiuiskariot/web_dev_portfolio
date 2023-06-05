@@ -20,11 +20,15 @@ export function AboutText({ aboutContent }) {
   return (
     <div className={s.about_text_area}>
       <ul className={s.about_numeric}>
-        {arrNumbers.map((el) => (
-          <li>{el}&nbsp; </li>
+        {arrNumbers.map((el, i) => (
+          <li key={i}>{el}&nbsp; </li>
         ))}
       </ul>
-
+      <ul className={s.about_numeric}>
+        {arrNumbers.map((el, i) => (
+          <li key={i}>*&nbsp; </li>
+        ))}
+      </ul>
       <p className={s.about_text_content} ref={textAreaRef}>
         {aboutContent}
       </p>

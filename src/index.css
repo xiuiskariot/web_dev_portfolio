@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  
 }
 
 body {
@@ -10,35 +9,40 @@ body {
   justify-content: center;
   align-items: center; */
   background: #f8c1e3;
-  font-family: 'Fira Code';
+  font-family: "Fira Code";
   min-height: 100vh;
 }
 
 main {
-  border:  1px solid #1e2d3d;
+  border: 1px solid #1e2d3d;
   height: calc(100vh - 55px - 50px);
   width: 100vw;
   overflow: hidden;
 }
 
-/* @import url("https://cdn.rawgit.com/lonekorean/gist-syntax-themes/d49b91b3/stylesheets/one-dark.css"); */
-@import url('https://cdn.rawgit.com/lonekorean/gist-syntax-themes/848d6580/stylesheets/obsidian.css');
+@import url("https://cdn.rawgit.com/lonekorean/gist-syntax-themes/d49b91b3/stylesheets/one-dark.css");
+/* @import url("https://cdn.rawgit.com/lonekorean/gist-syntax-themes/848d6580/stylesheets/obsidian.css"); */
 .gist-meta {
   display: none;
 }
 
+/* article {
+  display: flex;
+  flex-direction: column;
+}
+
+article > h2 {
+  order: 1;
+} */
 article > h2 {
   display: none;
 }
-
 .active {
   display: block;
   height: 100%;
   padding: 16px 32px;
   width: 100%;
-  /* color: #ffffff; */
-  border-bottom: 3px solid indigo;
-  
+  border-bottom: 5px solid indigo;
 }
 
 .not_active {

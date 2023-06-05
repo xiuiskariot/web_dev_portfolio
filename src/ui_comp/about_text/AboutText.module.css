@@ -1,22 +1,16 @@
 .about_text_area {
   display: flex;
-  color: #607b96;
-  padding: 17px 38px;
-  border: 1px solid #1e2d3d;
-  border-left-color: rgb(30, 45, 61);
-  border-left-style: solid;
-  border-left-width: 1px;
-  border-left: none;
+  width: 100%;
+  color: rgb(50, 90, 123);
+  padding: 17px 28px;
+  border-right: 1px solid #1e2d3d;
   font-family: "Fira Code";
+  align-items: flex-start;
   flex-basis: 40%;
-  height: 100%;
-  
+  overflow: auto;
 }
 
 .about_numeric {
   list-style-type: none;
   font-family: "Fira Code";
 }
-/* .about_text_content {
-  align-self: flex-start;
-} */

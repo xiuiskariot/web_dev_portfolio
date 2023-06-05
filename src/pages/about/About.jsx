@@ -1,52 +1,23 @@
-import { useState, useEffect, useRef } from "react";
+import { useState } from "react";
 import { AboutSnippets } from "../../ui_comp/about_snippets/AboutSnippets";
-//import { AboutText } from "../../ui_comp/about_text/AboutText";
+
 import { Aside } from "../../ui_comp/aside/Aside";
 import s from "./About.module.css";
 import { NavigationBlock } from "../../ui_comp/navigaton_block/NavigationBlock";
-
-function numeric(number) {
-  let arr = [];
-  for (let i = 1; i <= number / 20; i++) {
-    arr.push(i);
-  }
-
-  return arr;
-}
-
-
+import { AboutText } from "../../ui_comp/about_text/AboutText";
 
 const bio =
-  "1 Я только в начале пути изучения большого мира фронтэнда. До этого янесколько лет проектировала атомные станции. Занимаюсь пилоном. Недавнонаучилась делать колесо и вышивать бисером.             Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto animi perferendis reprehenderit consequuntur hic quia beatae! Adipisci saepe quaerat, perferendis, repudiandae harum esse mollitia ab culpa aliquid fugit facere provident? At nobis cupiditate, harum exercitationem alias quos dicta adipisci beatae dolorum officia corrupti vero sapiente, repudiandae, reprehenderit eius? Amet perspiciatis nisi eaque incidunt voluptatibus porro ducimus magnam sed quisquam pariatur ipsa natus, rem deserunt eligendi reiciendis necessitatibus beatae, nulla, similique fugit corrupti provident consequatur aspernatur? Aspernatur voluptate dolore iusto itaque exercitationem laboriosam nam eum? Quibusdam doloribus ipsum ab sed? Ipsum ratione blanditiis magnam autem placeat aut quaerat quas laborum libero. 1 Я только в начале пути изучения большого мира фронтэнда. До этого янесколько лет проектировала атомные станции. Занимаюсь пилоном. Недавнонаучилась делать колесо и вышивать бисером.             Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto animi perferendis reprehenderit consequuntur hic quia beatae! Adipisci saepe quaerat, perferendis, repudiandae harum esse mollitia ab culpa aliquid fugit facere provident? At nobis cupiditate, harum exercitationem alias quos dicta adipisci beatae dolorum officia corrupti vero sapiente, repudiandae, reprehenderit eius? Amet perspiciatis nisi eaque incidunt voluptatibus porro ducimus magnam sed quisquam pariatur ipsa natus, rem deserunt eligendi reiciendis necessitatibus beatae, nulla, similique fugit corrupti provident consequatur aspernatur? Aspernatur voluptate dolore iusto itaque exercitationem laboriosam nam eum? Quibusdam doloribus ipsum ab sed? Ipsum ratione blanditiis magnam autem placeat aut quaerat quas laborum libero. 1 Я только в начале пути изучения большого мира фронтэнда. До этого янесколько лет проектировала атомные станции. Занимаюсь пилоном. Недавнонаучилась делать колесо и вышивать бисером.             Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto animi perferendis reprehenderit consequuntur hic quia beatae! Adipisci saepe quaerat, perferendis, repudiandae harum esse mollitia ab culpa aliquid fugit facere provident? At nobis cupiditate, harum exercitationem alias quos dicta adipisci beatae dolorum officia corrupti vero sapiente, repudiandae, reprehenderit eius? Amet perspiciatis nisi eaque incidunt voluptatibus porro ducimus magnam sed quisquam pariatur ipsa natus, rem deserunt eligendi reiciendis necessitatibus beatae, nulla, similique fugit corrupti provident consequatur aspernatur? Aspernatur voluptate dolore iusto itaque exercitationem laboriosam nam eum? Quibusdam doloribus ipsum ab sed? Ipsum ratione blanditiis magnam autem placeat aut quaerat quas laborum libero.  ";
+  "When I was in school, I saw a report about an event that deeply touched my soul. It was news about hackers who hacked the control unit of the nuclear power plant, they threatened that they would introduce xenon rods into the reactor and a reaction would occur like in Chernobyl. Then I thought, my God, what a cool and powerful joke nuclear power is. Multimillion-dollar equipment, advanced scientific developments, great engineering minds and all that. I have worked hard to become a part of this world. And so, I am already a young, charged specialist, I was immediately given to design a reactor drainage system for a distant station in Egypt.It would seem that a childhood dream came true, but I was almost immediately disappointed in my choice.I didn't know what it was like to work in a giant state corporation. Initiative is punishable - the more you offer, the more people ride you. It makes no sense to grow as a specialist - they will be promoted when there is a quota for the position. If you want to look at the nuclear power plant, you will. A stupid routine that arises because of poor software. But for me, work is primarily a way of self-expression.I like to solve complex problems, to look for a solution until it stops, until the code works the way it was intended not to execute one template after another and do something unique. It is important for me to see the result of my work. What's the point of spending most of your life sitting out your 8 hours and doing your best to portray a stormy activity without real results that will speak for you, what a cool specialist and a pleasant person to work with.";
 const stack =
   "я пишу на js, быстро стилизую все на css, королева флексконтейнера научилась не плакать, когда пишу на реакте             Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto animi perferendis reprehenderit consequuntur hic quia beatae! Adipisci saepe quaerat, perferendis, repudiandae harum esse mollitia ab culpa aliquid fugit facere provident? At nobis cupiditate, harum exercitationem alias quos dicta adipisci beatae dolorum officia corrupti vero sapiente, repudiandae, reprehenderit eius? Amet perspiciatis nisi eaque incidunt voluptatibus porro ducimu.";
-const education = "как видите, я люблю учиться новому";
+const education = <p>как видите, я люблю учиться новому</p>;
 
 export const About = () => {
   const [aboutContent, setAboutContent] = useState(bio);
-  const [arrNumbers, setArrNumbers] = useState([])
-
-  const textAreaRef = useRef(null);
-
-
-  useEffect(() => {
-    setArrNumbers(numeric(textAreaRef.current.clientHeight));
-  }, [aboutContent]);
-
 
   return (
     <section className={s.section_about}>
-      <div className={s.about_text_area}>
-        <ul className={s.about_numeric}>
-          {arrNumbers.map((el) => (
-            <li>{el}&nbsp; </li>
-          ))}
-        </ul>
-
-        <p className={s.about_text_content} ref={textAreaRef}>
-          {aboutContent}
-        </p>
-      </div>
+      <AboutText aboutContent={aboutContent} />
       <AboutSnippets />
       <Aside>
         <NavigationBlock title="professional-info">

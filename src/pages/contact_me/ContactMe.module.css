@@ -1,9 +1,7 @@
 .contact_container {
-  /* display: flex;
-   justify-content: space-between; */
   height: 100%;
- width: 100%;
-   display: grid;
+  width: 100%;
+  display: grid;
   grid-template-columns: 243px 1fr 1.5fr;
   justify-content: space-between;
 }
@@ -15,8 +13,7 @@
   color: #607b96;
   flex-basis: 40%;
   align-items: center;
-  border: 1px solid #1e2d3d;
-  border-left: none;
+  border-right: 1px solid #1e2d3d;
 }
 
 .contact_form > div {
@@ -24,28 +21,15 @@
   flex-direction: column;
 }
 
-.contact_log {
-  padding: 100px 40px 0 ;
-  color: #5565e8;
-  flex-basis: 40%;
-
-  /* align-self: flex-start; */
-  border: 1px solid #1e2d3d;
-  border-left: none;
-
-  justify-content: center;
-  align-items: center;
-}
-
 input,
 textarea {
   padding: 10px 15px;
-  color: #465e77;
+  color: black;
   font-family: "Fira Code";
 
-  background: #011221;
-  border: 1px solid #607b96;
-  box-shadow: 0px 0px 0px 2px rgba(96, 123, 150, 0.3);
+  background:#f8c1e3;;
+  border: 2px solid #23024e;
+  box-shadow: 0px 0px 0px 2px rgba(120, 51, 177, 0.3);
   border-radius: 8px;
   outline: none;
   margin-bottom: 24px;
@@ -68,6 +52,7 @@ textarea {
 
 label {
   margin-bottom: 10px;
+   color: black
 }
 
 .contact_btn {
@@ -78,38 +63,39 @@ label {
   font-family: "Fira Code";
   width: 146px;
   height: 38px;
-  background: #1c2b3a;
+  background: #23024e;
   border-radius: 8px;
   border: none;
   cursor: pointer;
-  color: #ffffff;
+  color: rgb(241, 241, 241);
+   box-shadow: 0 4px 6px rgb(65 132 144 / 10%), 0 1px 3px rgb(0 0 0 / 8%);
+   transition: box-shadow 0.2s;
 }
 
-.pink {
-  color: #c98bdf;
+.contact_btn:hover {
+  transform: scale(1.03);
+  transition: all 0.5ms;
 }
 
-.grey {
-  color: #607b96;
-}
-.orange {
-  color: #fea55f;
-}
 
-ol {
-  counter-reset: myCounter;
-}
-
-ol > li {
-  list-style: none;
-}
-
-ol > li:before {
-  counter-increment: myCounter;
-  content: counter(myCounter);
-  margin-right: 30px;
-  color: #607b96;
-} 
+/* .contact_btn {
+  font-family: "Fira Code";
+  padding: 10px 14px;
+  outline: none;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 600;
+  color: rgb(241, 241, 241);
+  background-color: #23024e;
+  border: none;
+  box-shadow: 0 4px 6px rgb(65 132 144 / 10%), 0 1px 3px rgb(0 0 0 / 8%);
+  cursor: pointer;
+  appearance: none;
+  transition: box-shadow 0.2s;
+} */
 
 .sub_category {
   font-weight: 400;
@@ -122,7 +108,7 @@ ol > li:before {
 }
 
 .sub_category:hover {
-  color:rgb(22, 118, 113);
+  color: rgb(22, 118, 113);
   transition: all 100ms;
   cursor: pointer;
 }

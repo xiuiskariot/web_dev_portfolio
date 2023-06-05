@@ -1,0 +1,33 @@
+.contact_log {
+  padding: 100px 40px 0;
+  color: darkblue;
+  flex-basis: 40%;
+  justify-content: center;
+  align-items: center;
+}
+
+.pink {
+  color: darkorchid;
+}
+
+.grey {
+  color: #607b96;
+}
+.orange {
+  color: darkcyan;
+}
+
+ol {
+  counter-reset: myCounter;
+}
+
+ol > li {
+  list-style: none;
+}
+
+ol > li:before {
+  counter-increment: myCounter;
+  content: counter(myCounter);
+  margin-right: 30px;
+  color: #607b96;
+}

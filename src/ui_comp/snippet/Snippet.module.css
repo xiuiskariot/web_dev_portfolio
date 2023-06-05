@@ -1,18 +1,19 @@
 .container {
   flex-basis: 50%;
+  border-left: none;
+  border-top: none;
   height: 100%;
   overflow: scroll;
-  position: relative;
-   color: rgb(50, 90, 123);
 }
 
 .about_snippets {
-  padding-top: 74px;
+  padding-top: 44px;
 }
 
 .about_snippet {
   width: 90%;
   margin: 0 auto 50px;
+  
 }
 .about_snippet_title {
   color: rgb(50, 90, 123);
@@ -23,9 +24,6 @@
   line-height: 24px;
   padding: 20px 0 14px 40px;
   border-bottom: 1px solid #1e2d3d;
-  position: fixed;
-  background: #f8c1e3;
-  width: 100%;
 }
 
 .about_snippet_header {
@@ -33,7 +31,7 @@
   font-family: "Fira Code";
   align-items: center;
   margin-bottom: 10px;
-   color: rgb(50, 90, 123);
+color: rgb(50, 90, 123);
 }
 
 .about_snippet_header > img {
@@ -67,5 +65,5 @@
   font-weight: 450;
   font-size: 14px;
   line-height: 150%;
-   color: rgb(50, 90, 123);
+  color: rgb(50, 90, 123);
 }

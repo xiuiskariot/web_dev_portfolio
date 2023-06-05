@@ -24,10 +24,11 @@
 
 .about_text_area {
   display: flex;
+
+  width: 100%;
   color: #607b96;
-  padding: 17px 38px;
-  border: 1px solid #1e2d3d;
-  border-left: none;
+  padding: 17px 28px;
+  border-right: 1px solid #1e2d3d;
   font-family: "Fira Code";
   align-items: flex-start;
   flex-basis: 40%;
@@ -38,6 +39,3 @@
   list-style-type: none;
   font-family: "Fira Code";
 }
-/* .about_text_content {
-  align-self: flex-start;
-} */
